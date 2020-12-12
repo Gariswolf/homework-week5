@@ -1,0 +1,31 @@
+<table class="table border-bottom border-tertiary mb-16">
+    <thead>
+      	<tr>
+			<th scope="col" class="border-top-0 border-black"><span class="mr-2">ID</span><span class="material-icons color-primary fz-6">arrow_downward</span></th>
+			<th scope="col" class="border-top-0 border-black">Name</th>
+			<th scope="col" class="border-top-0 border-black">Email</th>
+			<th scope="col" class="border-top-0 border-black">Verified</th>
+      	</tr>
+    </thead>
+    <tbody>
+		<% for (var i in table_id) { %>
+            <tr>
+                <th scope="row">#<%= table_id[i] %></th>
+                <td><%= table_name[i] %></td>
+                <td><%= table_email[i] %></td>
+                <td class="d-flex align-items-center">
+                    <div class="flex-grow-1 mr-6">
+                        Yes
+                    </div>
+                    <button type="button" class="btn d-flex align-items-center p-0 mr-6">
+                        <span class="material-icons">remove_red_eye</span>    
+                    </button>
+                    <button type="button" class="btn d-flex align-items-center p-0" data-toggle="modal" data-target="#editAdmin">
+                        <span class="material-icons">create</span>    
+                    </button>
+                </td>
+            </tr>
+        <% } %>
+    </tbody>
+</table>
+<%- include('modal-edit-admin.ejs') %>

@@ -1,0 +1,23 @@
+<h1 class="mb-8">
+    <a href="index.html">
+        <img src="assets/images/logo-ANSWER.svg" alt="Logo Answer" class="img-fluid">
+        後台管理
+    </a>
+</h1>
+<ul class="list-unstyled mb-auto ml-n8">
+    <% for (var i in sidebar_icon) { %>
+        <li class="mb-6 font-weight-bold">
+            <a href="<%= sidebar_page[i] %>" class="sidebar-link d-flex align-items-center hover-color-primary pl-7">
+                <span class="material-icons mr-2"><%= sidebar_icon[i] %></span>
+                <span class="text-truncate"><%= sidebar_page_title[i] %></span>
+            </a>
+        </li>
+    <% } %>
+</ul>
+<div class="d-flex flex-wrap align-items-xs-center">
+    <div class="icon-user rounded-circle bg-full mr-4" style="background-image: url('assets/images/andychen.jpeg');"></div>
+    <ul class="list-unstyled mb-0 w-100">
+        <li class="font-weight-bold">Andy Chen</li>
+        <li class="fz-7 text-gray"><a href="mailto:andy0401@mail.com" class="text-truncate">andy0401@mail.com</a></li>
+    </ul>
+</div>
