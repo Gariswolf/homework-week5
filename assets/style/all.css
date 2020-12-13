@@ -19433,6 +19433,13 @@ small {
   width: 12px;
   height: 12px; }
 
+.img-user {
+  max-width: 141px;
+  max-height: 141px; }
+
+.lh-md {
+  line-height: 1.5; }
+
 @media (min-width: 0px) {
   .w-xss-25 {
     width: 25% !important; }
