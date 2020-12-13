@@ -1,0 +1,28 @@
+<% for (var i in table_id) { %>
+<div class="modal fade" id="user_<%= table_id[i] %>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-body p-8 d-flex">
+            <img src="assets/images/emir.jpeg" alt="<%= table_name[i] %>" class="img-fluid img-user mr-6">
+            <div class="flex-grow-1">
+                <div class="d-flex justify-content-between align-items-center">
+                    <p>#<%= table_id[i] %></p>
+                    <button type="button" class="close d-flex align-items-center" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <ul class="list-unstyled">
+                    <li>Admin</li>
+                    <li class="fz-10 font-weight-bold"><%= table_name[i] %></li>
+                    <li class="fz-7 text-gray"><%= table_email[i] %></li>
+                </ul>
+                <div class="d-flex justify-content-between align-items-center">
+                    <span class="fz-7 bg-secondary px-2 py-1">verified</span>
+                    <a href="#" class="d-flex align-items-center"><span class="material-icons">expand_more</span></a>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+</div>
+<% } %>

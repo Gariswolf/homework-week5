@@ -17,7 +17,7 @@
                     <div class="flex-grow-1 mr-6">
                         Yes
                     </div>
-                    <button type="button" class="btn d-flex align-items-center p-0 mr-6">
+                    <button type="button" class="btn d-flex align-items-center p-0 mr-6" data-toggle="modal" data-target="#user_<%= table_id[i] %>">
                         <span class="material-icons">remove_red_eye</span>    
                     </button>
                     <button type="button" class="btn d-flex align-items-center p-0" data-toggle="modal" data-target="#editAdmin">
@@ -28,4 +28,5 @@
         <% } %>
     </tbody>
 </table>
+<%- include('modal-user-info.ejs') %>
 <%- include('modal-edit-admin.ejs') %>
